@@ -129,6 +129,7 @@ i, p{
 
 #angry #wrapper {
     background-image: url('img/pdi.png');
+    background-size: 400px;
     background-attachment: scroll;
 }
 
