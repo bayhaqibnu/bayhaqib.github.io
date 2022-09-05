@@ -102,7 +102,7 @@ i, p{
 
 /* darkmode */
 #darkmode {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
@@ -113,12 +113,12 @@ i, p{
 
 /* lightmode */
 #lightmode {
-    background: rgb(255,255,255,0.9);
+    background: rgb(255,255,255,0.4);
 }
 
 #lightmode span,
 #lightmode p {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 /* angrymode */
@@ -141,9 +141,9 @@ i, p{
 /* responsive */
 @media only screen and (max-width: 400px) {
     .mode {
-        font-size: 1em;
+        font-size: 1rem;
         top: 20px;
-        left: 45%;
+        left: 13%;
     }
     #wrapper {
         width: 70%;
@@ -169,5 +169,11 @@ i, p{
 
     #contact {
         margin: 26px 0 10px 0;
+    }
+
+    #angry #wrapper {
+        background-image: url('img/pdi.png');
+        background-size: 280px;
+        background-attachment: scroll;
     }
   }
