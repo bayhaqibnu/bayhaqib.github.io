@@ -8,24 +8,26 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: rgba(0, 0, 0, 0.01);
+    height: 100vh;
 }
 
 .mode {
     position: absolute;
     top: 50px;
-    left: 50%;
-    font-size: 2em;
+    left: 17.5%;
+    font-size: 1.5rem;
     cursor: pointer;
 }
+.moon, .sun, .angry{text-decoration: underline;}
 
 .moon:hover,
-.sun:hover {
+.sun:hover,
+.angry:hover {
     opacity: 0.7;
 }
 
 #wrapper {
-    width: 56%;
+    width: 65%;
     margin: 0 auto;
     margin-top: 130px;
 }
@@ -63,7 +65,6 @@ i, p{
 
 .arrow {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(10, 10, 170);
 }
 
 .special-content i {
@@ -94,18 +95,47 @@ i, p{
 }
 
 /* style js */
+
 .change {
     background: linear-gradient(to bottom left,  #BB73E0, #FF8DDB) !important;
 }
 
-.dark {
-    background-color: rgba(0, 0, 0, 0.6);
+/* darkmode */
+#darkmode {
+    background: rgba(0, 0, 0, 0.6);
     color: white;
 }
 
-.light {
-    background-color: white;
-    color: black;
+#darkmode span,
+#darkmode p {
+    color: rgba(255,255,255,0.85);
+}
+
+/* lightmode */
+#lightmode {
+    background: rgb(255,255,255,0.9);
+}
+
+#lightmode span,
+#lightmode p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* angrymode */
+#angry{
+    background: rgba(255, 0, 0, 0.8);
+    color: rgba(255,255,255,0.85);
+}
+
+#angry #wrapper {
+    background-image: url('img/pdi.png');
+    background-attachment: scroll;
+}
+
+#angry span,
+#angry p,
+#angry hr {
+    color: rgba(255,255,255,0.85);
 }
 
 /* responsive */
