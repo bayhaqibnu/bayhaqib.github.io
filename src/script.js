@@ -43,16 +43,26 @@ let icon = root.querySelectorAll('i');
 // =====================================================================================================
 // ======================================== cara simple by kang hilman =================================
 // =====================================================================================================
+    if(localStorage.getItem('theme') == 'dark'){
+        mode('moon')
+    }else if(localStorage.getItem('theme') == 'light' ){
+        mode('sun');
+    }else if(localStorage.getItem('theme') == 'angry'){
+        mode('angry');
+    }
 
 function mode(isDark) {
     if(isDark == 'moon') {
         document.body.setAttribute('id', 'darkmode');
+        localStorage.setItem('theme', 'dark');
     }else if(isDark == 'sun'){
         document.body.setAttribute('id', 'lightmode');
+        localStorage.setItem('theme', 'light');
     }else if(isDark == 'angry'){
         document.body.setAttribute('id', 'angry');
+        localStorage.setItem('theme','angry');
     }else {
-        alert('Mohon maaf, mode sedang dalam pengembangan!')
+        alert('Mode ini sedang dalam pengembangan.')
     }
 }
 
